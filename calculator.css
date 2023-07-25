@@ -1,0 +1,110 @@
+/* Body CSS */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #ff7f50, #87cefa);
+}
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  width: 265px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: monospace;
+  color: #ff8c00;
+}
+
+.calculator {
+  width: 300px;
+  margin: 0 auto;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Display Screen CSS */
+.display-screen {
+  width: 93%;
+  height: 60px;
+  margin-bottom: 10px;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px 10px;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.display-screen input {
+  font-size: 24px;
+  width: 100%;
+  border: none;
+  background-color: #fff;
+  text-align: right;
+  color: #555;
+  outline: none;
+  font-weight: bold;
+}
+
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+.button, .operator, .equal {
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+
+.operator, .equal {
+  background-color: #ff8c00;
+  color: #fff;
+}
+
+.button:hover, .operator:hover, .equal:hover {
+  background-color: #ccc;
+}
+.delete {
+  background-color: #ff8c00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 20px;
+  margin: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.clear{
+  background-color: #ff8c00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 20px;
+  margin: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.clear:hover, .delete:hover {
+  background-color: #ccc;
+}
